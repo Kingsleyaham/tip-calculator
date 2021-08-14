@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- Link to normal stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <!-- Vue Js CDN link -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+
+<body>
+  <div class="container" id="app">
+    <p class="tip-heading">
+      SPLI <br>
+      TITER
+    </p>
+    <div class="flex-container">
+      <div>
+        <div class="bill-wrapper">
+          <p class="sub-heading">Bill</p>
+          <i class="fa fa-usd" aria-hidden="true"></i>
+          <input type="text" id="bill" v-model="bill" @input="setBill($event)" placeholder="0">
+        </div>
+        <p class="sub-heading">Select Tip % </p>
+        <div class="tips">
+          <div>
+            <span @click="setTip($event)">5%</span>
+            <span @click="setTip($event)">10%</span>
+            <span @click="setTip($event)">15%</span>
+          </div>
+          <div>
+            <span @click="setTip($event)">25%</span>
+            <span @click="setTip($event)">50%</span>
+            <input type="text" @input="setTip($event)" id="custom-tip" placeholder="Custom">
+          </div>
+        </div>
+        <div class="customer-count">
+          <div>
+            <p class="sub-heading">Number of People</p>
+            <p id="zero-customer-warning">Can't be zero</p>
+          </div>
+          <div>
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <input type="text" v-model="numberOfPeople" @input="setPeopleCount($event)" id="customer-count-input"
+              placeholder="0">
+          </div>
+
+        </div>
+      </div>
+      <div class="tip-total-wrapper">
+        <div>
+          <p>Tip Amount <br><span>/ person</span></p>
+
+          <p> Total <br><span>/ person</span></p>
+
+        </div>
+        <div>
+          <h1 id="tip-amount">${{tipAmount.toFixed(2)}}</h1>
+          <h1 id="tip-total">${{total.toFixed(2)}}</h1>
+        </div>
+        <button id="reset" @click="resetCalculator($event)"> Reset</button>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+        href="#">Aham
+        Kingsley</a>.
+    </div>
+  </div>
+
+
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
