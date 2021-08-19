@@ -150,28 +150,24 @@ input:hover {
   width: 100%;
 }
 
-
-
 .tip-total-wrapper {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
   margin-left: 10px;
-
-
 }
 
 .tip-total-wrapper>div {
-  width: 35%;
+  width: 30%;
   padding-left: 0px;
   padding-right: 0px;
   margin-bottom: 55px;
-
 }
 
 .tip-total-wrapper>div:nth-child(even) {
   text-align: right;
+  width: 70%;
 }
 
 .tip-total-wrapper>button {
@@ -194,7 +190,7 @@ input:hover {
 
 .tip-total-wrapper>div>h1 {
   color: hsl(172, 67%, 45%);
-  font-size: 38px;
+  font-size: 35px;
   margin-bottom: 30px;
 }
 
@@ -211,7 +207,6 @@ input:hover {
   color: hsl(184, 14%, 56%);
 }
 
-
 .attribution {
   padding-top: 40px;
   font-size: 14px;
@@ -223,6 +218,37 @@ input:hover {
   color: hsl(228, 45%, 44%);
 }
 
+@media screen and (max-width: 1210px) {
+  .flex-container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+
+  .flex-container {
+    width: 85%;
+  }
+
+  .flex-container {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .flex-container>div {
+    width: 88%;
+    margin: 20px auto;
+  }
+
+  .tip-total-wrapper>div {
+    width: 22%;
+  }
+
+  .tip-total-wrapper>div:nth-child(even) {
+    width: 75%;
+  }
+}
+
 /* styles for tablet devices */
 @media screen and (max-width: 768px) {
   .container {
@@ -230,82 +256,55 @@ input:hover {
   }
 
   .flex-container {
-    width: 80%;
-    margin: 40px;
+    width: 90%;
+    margin: 20px auto;
+    padding: 5px 15px;
   }
 
   .flex-container>div {
-    width: 90%;
+    width: 98%;
+    margin: 20px 0px;
   }
 
   .flex-container>div:nth-child(even) {
-    padding: 10px;
-    margin: 10px;
+    padding: 5px;
+    width: 98%;
+  }
+
+  .tip-total-wrapper {
+    flex-flow: row wrap;
+
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10px;
   }
 
   .tip-total-wrapper>div {
+    width: 25%;
     margin-bottom: 25px;
+    padding-left: 10px;
   }
 
+  .tip-total-wrapper>div:nth-child(even) {
+    padding-left: 0px;
+    width: 70%;
+  }
 
-
+  .tip-total-wrapper>div>h1 {
+    font-size: 30px;
+  }
 }
 
 
 /* styles for mobile devices */
 @media screen and (max-width: 480px) {
   .flex-container {
-    width: 95%;
-    margin: 40px auto;
-    padding: 10px;
-  }
-
-  .flex-container>div {
-    width: 95%;
-  }
-
-  .flex-container>div:nth-child(even) {
-    padding: 5px;
-    margin: 5px;
-    width: 95%;
+    width: 98%;
   }
 
   .tip-total-wrapper>div>h1 {
-    font-size: 30px;
+    font-size: 25px;
   }
 
-}
 
-@media screen and (max-width: 380px) {
-  .flex-container {
-    width: 98%;
-    margin: 20px auto;
-    padding: 5px;
-  }
-
-  .flex-container>div {
-    width: 98%;
-  }
-
-  .flex-container>div:nth-child(even) {
-    padding: 5px;
-    margin: 0px;
-    width: 98%;
-  }
-
-  .tips>div>span {
-    width: 30%;
-    background-color: #086452;
-    margin: 5px 3px;
-    padding: 5px;
-  }
-
-  .tip-total-wrapper>div {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .tips>div>input {
-    width: 30%;
-  }
 }

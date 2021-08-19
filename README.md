@@ -26,14 +26,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./design/desktop-design.png)
+![desktop design](./design/desktop-design.png)
 
-![](./design/mobile-design.png)
+![mobile-design](./design/mobile-design.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [](https://kingsleyprojects.github.io/tip-calculator/)
 
 ## My process
 
