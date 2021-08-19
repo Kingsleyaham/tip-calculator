@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://kingsleyprojects.github.io/tip-calculator/)
+- Solution URL: (https://kingsleyprojects.github.io/tip-calculator/)
 
 ## My process
 
